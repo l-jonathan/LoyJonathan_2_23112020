@@ -1,4 +1,4 @@
-/* GÉNÉRAL */
+/********** GÉNÉRAL **********/
 body
 {
     font-family: 'Raleway', sans-serif;
@@ -6,7 +6,7 @@ body
     margin: auto;
 }
 
-/* ENTÊTE */
+/********** ENTÊTE **********/
 header
 {
     display: flex;
@@ -41,6 +41,55 @@ header
     color: #0065FC;
     font-weight: bolder;
 }
-/* BLOC PAGE */
 
+/********** BLOC PAGE **********/
+.bloc-page
+{
+    display: flex;
+    flex-direction: column;
+}
+/* Texte de l'accroche */
+.accroche h1
+{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.accroche p
+{
+    font-size: 0.7rem;
+}
+/* Champ de saisie de la ville */
+.saisie_ville
+{
+    height: 30px;
+    display: flex;
+}
+.saisie_ville i
+{
+    background-color: #F2F2F2;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.7rem 0 0 0.7rem;
+}
+
+#ville
+{
+    border-right: none;
+    border-left: none;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    font-weight: bolder;
+}
+
+#rechercher
+{
+    background-color: #0065FC;
+    border-radius: 0 0.7rem 0.7rem 0;
+    border: none;
+    color: white;
+}
 /* PIED DE PAGE */
