@@ -1,0 +1,46 @@
+/* GÉNÉRAL */
+body
+{
+    font-family: 'Raleway', sans-serif;
+    width: 90%;
+    margin: auto;
+}
+
+/* ENTÊTE */
+header
+{
+    display: flex;
+}
+
+.menu
+{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.menu a
+{
+    background-color: white;
+    /*border: none;*/
+    text-decoration: none;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.btn_menu_1
+{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+.btn_menu_2
+{
+    color: black;
+}
+.btn_menu_3
+{
+    color: #0065FC;
+    font-weight: bolder;
+}
+/* BLOC PAGE */
+
+/* PIED DE PAGE */
