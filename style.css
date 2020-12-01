@@ -22,7 +22,6 @@ header
 .menu a
 {
     background-color: white;
-    /*border: none;*/
     text-decoration: none;
     padding: 1rem 1rem 1rem 1rem;
 }
@@ -98,16 +97,191 @@ header
 /* Filtres */
 .groupe_filtres
 {
-    /*max-width: 70%;*/
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    border: 1px solid black;
+    justify-content: left;
+    align-items: center;
+    margin-top: 20px;
 }
 
+.filtre
+{
+    height: 30px;
+    width: 150px;
+    margin-left: 20px;
+    border: 1px solid #F2F2F2;
+    border-radius: 50px 50px 50px 50px;
+    border-left: none;
+    display: flex;
+}
 .groupe_filtres h1
 {
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
+.filtre i
+{
+    background-color: #DEEBFF;
+    color: #0065FC;
+    height: 32px;
+    width: 30px;
+    border-radius: 50px 50px 50px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filtre span
+{
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+}
+
+/* Accroche du nombre de logements disponible */
+.nb_logements
+{
+    display: flex;
+    align-items: center;
+}
+
+.nb_logements i
+{
+    color: #0065FC;
+    margin-right: 10px;
+}
+
+.nb_logements p
+{
+    font-size: 0.8rem;
+}
+
+/* Hébergements Classiques */
+.bloc_hébergements
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bloc_hébergements h1
+{
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.bloc_hébergements h2, p, .etoiles
+{
+    padding-left: 10px;
+}
+
+.bloc_hébergements h2
+{
+    font-size: 1rem;
+    margin-top: -1px;
+    margin-bottom: -10px;
+}
+
+.bloc_hébergements p
+{
+    font-size: 0.7rem;
+
+}
+
+.bloc_hébergements span
+{
+    font-weight: bold;
+}
+
+.hebergements_classiques
+{
+    width: 800px;
+    background-color: #F2F2F2;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.groupe1, .groupe2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.Hebergements_images_dessus, .Hebergements_images_gauche
+{
+    border: 2px solid white;
+    background-color: white;
+    width: 200px;
+    border-radius: 20px 20px 20px 20px; 
+}
+
+.Hebergements_images_dessus img
+{
+    width: 200px;
+    height: 100px;
+    background-size: cover;
+    border-radius: 20px 20px 0 0;  
+}
+
+.etoiles
+{
+    color: #0065FC;
+    margin-top: -10px;
+    margin-bottom: 2px;
+}
+
+/* Hebergements populaires */
+.titre_hebergements_populaires i
+{
+    position: relative;
+    bottom: 50px;
+    left: 350px;
+}
+
+.bloc_hebergements_populaires
+{
+    width: 400px;
+    background-color: #F2F2F2;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.Hebergements_images_gauche
+{
+    /*display: flex;
+    flex-direction: row;*/
+    margin: auto;
+    width: 85%;
+    height: 100px;
+    margin-bottom: 2rem;
+}
+
+.Hebergements_images_gauche img
+{
+    width: 100px;
+    height: 100px;
+    float: left;
+    background-size: cover;
+    border-radius: 20px 0 0 20px;  
+}
+
+.Hebergements_images_gauche h2
+{
+    /*width: 50%;*/
+    font-size: 0.5rem;
+    /*position: relative;
+    left: 100px;*/
+    border: 1px solid black;
+}
+.texte_image
+{
+    /*position: relative;
+    bottom: 100px;*/
+}
+.Hebergements_images_gauche .etoiles
+{
+    /*padding-top: 50px;*/
+}
 /********** PIED DE PAGE **********/
