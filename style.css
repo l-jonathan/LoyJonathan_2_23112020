@@ -163,7 +163,6 @@ header
 {
     display: flex;
     justify-content: space-between;
-    border: 1px solid black;
 }
 
 .bloc_hébergements h1
@@ -182,7 +181,6 @@ header
 .bloc_hébergements h2
 {
     font-size: 1rem;
-    /*margin-top: -1rem;*/
     margin-bottom: -10px;
 }
 
@@ -242,7 +240,22 @@ header
     margin-bottom: 2px;
 }
 
+.hebergements_classiques a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding-left: 2rem;
+}
+
 /* Hebergements populaires */
+.titre_hebergements_populaires
+{
+    position: relative;
+    bottom: 15px;
+    margin-bottom: -2rem;
+}
+
 .titre_hebergements_populaires i
 {
     position: relative;
@@ -262,14 +275,14 @@ header
 {
     margin: auto;
     width: 85%;
-    height: 100px;
-    margin-bottom: 2rem;
+    height: 120px;
+    margin-bottom: 1.5rem;
 }
 
 .Hebergements_images_gauche img
 {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     float: left;
     background-size: cover;
     border-radius: 20px 0 0 20px;  
@@ -285,7 +298,6 @@ header
     flex-direction: column;
     justify-content: space-between;
     margin-left: 100px;
-    border: 1px solid black;
     width: 60%;
     height: 100%;
 }
@@ -295,4 +307,5 @@ header
     left: 0;
     top: 0;
 }
+
 /********** PIED DE PAGE **********/
