@@ -4,6 +4,7 @@ body
     font-family: 'Raleway', sans-serif;
     width: 90%;
     margin: auto;
+    overflow-wrap: break-word;
 }
 
 /********** ENTÊTE **********/
@@ -162,6 +163,7 @@ header
 {
     display: flex;
     justify-content: space-between;
+    border: 1px solid black;
 }
 
 .bloc_hébergements h1
@@ -180,7 +182,7 @@ header
 .bloc_hébergements h2
 {
     font-size: 1rem;
-    margin-top: -1px;
+    /*margin-top: -1rem;*/
     margin-bottom: -10px;
 }
 
@@ -195,11 +197,18 @@ header
     font-weight: bold;
 }
 
+.bloc_hebergements_classiques
+{
+    flex-grow: 5;
+    margin-right: 30px;
+}
+
 .hebergements_classiques
 {
-    width: 800px;
+    height: 100%;
     background-color: #F2F2F2;
     border-radius: 20px 20px 20px 20px;
+    margin-top: -15px;
 }
 
 .groupe1, .groupe2
@@ -246,12 +255,11 @@ header
     width: 400px;
     background-color: #F2F2F2;
     border-radius: 20px 20px 20px 20px;
+    flex-grow: 2;
 }
 
 .Hebergements_images_gauche
 {
-    /*display: flex;
-    flex-direction: row;*/
     margin: auto;
     width: 85%;
     height: 100px;
@@ -269,19 +277,22 @@ header
 
 .Hebergements_images_gauche h2
 {
-    /*width: 50%;*/
-    font-size: 0.5rem;
-    /*position: relative;
-    left: 100px;*/
-    border: 1px solid black;
+    font-size: 1rem;
 }
 .texte_image
 {
-    /*position: relative;
-    bottom: 100px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 100px;
+    border: 1px solid black;
+    width: 60%;
+    height: 100%;
 }
 .Hebergements_images_gauche .etoiles
 {
-    /*padding-top: 50px;*/
+    position: relative;
+    left: 0;
+    top: 0;
 }
 /********** PIED DE PAGE **********/
