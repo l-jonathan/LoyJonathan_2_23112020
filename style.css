@@ -7,6 +7,12 @@ body
     overflow-wrap: break-word;
 }
 
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
 /********** ENTÊTE **********/
 header
 {
@@ -114,7 +120,14 @@ header
     border-radius: 50px 50px 50px 50px;
     border-left: none;
     display: flex;
+    transition: all 0.3s linear 0s;
 }
+
+.filtre:hover
+{
+    background-color: #DEEBFF;
+}
+
 .groupe_filtres h1
 {
     font-size: 0.8rem;
@@ -124,7 +137,7 @@ header
 {
     background-color: #DEEBFF;
     color: #0065FC;
-    height: 32px;
+    height: 30px;
     width: 30px;
     border-radius: 50px 50px 50px 50px;
     display: flex;
@@ -169,7 +182,6 @@ header
 {
     padding-left: 2rem;
     padding-top: 2rem;
-    padding-bottom: 1rem;
     font-size: 1.4rem;
 }
 
@@ -222,7 +234,7 @@ header
     border: 2px solid white;
     background-color: white;
     width: 200px;
-    border-radius: 20px 20px 20px 20px; 
+    border-radius: 20px 20px 20px 20px;
 }
 
 .Hebergements_images_dessus img
@@ -230,7 +242,8 @@ header
     width: 200px;
     height: 100px;
     background-size: cover;
-    border-radius: 20px 20px 0 0;  
+    border-radius: 20px 20px 0 0;
+    margin-left: -33px;
 }
 
 .etoiles
@@ -292,6 +305,7 @@ header
 {
     font-size: 1rem;
 }
+
 .texte_image
 {
     display: flex;
@@ -301,6 +315,24 @@ header
     width: 60%;
     height: 100%;
 }
+
+.description h2
+{
+    font-size: 1rem;
+    margin-bottom: -10px;
+}
+
+.bloc_hébergements_populaires p
+{
+    font-size: 0.7rem;
+
+}
+
+.bloc_hébergements_populaires span
+{
+    font-weight: bold;
+}
+
 .Hebergements_images_gauche .etoiles
 {
     position: relative;
@@ -320,7 +352,7 @@ header
 
 .bloc_activites h1
 {
-    margin-bottom: -0.3rem;
+    margin-bottom: 0.3rem;
     font-size: 1.4rem;
     margin-left: 2rem;
 }
