@@ -308,6 +308,59 @@ header
     top: 0;
 }
 
+/* Activités */
+.bloc_activites
+{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    margin-top: 2rem; 
+    margin-bottom: 3rem; 
+}
+
+.bloc_activites h1
+{
+    margin-bottom: -0.3rem;
+    font-size: 1.4rem;
+    margin-left: 2rem;
+}
+
+.groupe_images_activites
+{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column wrap;
+    height: 400px;
+}
+
+.image_activite
+{
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 2px 2px 10px 4px #F2F2F2;
+    margin: auto;
+}
+
+.format1
+{
+    width: 250px;
+    height: 320px;
+    border-radius: 20px 20px 0 0;
+}
+
+.format2
+{
+    width: 250px;
+    height: 140px;
+    border-radius: 20px 20px 0 0;
+}
+
+.format3
+{
+    width: 250px;
+    height: 90px;
+    border-radius: 20px 20px 0 0;
+}
+
 /********** PIED DE PAGE **********/
 .bloc_pied_page
 {
@@ -317,6 +370,7 @@ header
     width: 100%;
     background-color: #F2F2F2;
     padding-top: 1rem;
+    margin: 0;
 }
 
 .section_pied
