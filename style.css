@@ -309,3 +309,32 @@ header
 }
 
 /********** PIED DE PAGE **********/
+.bloc_pied_page
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #F2F2F2;
+    padding-top: 1rem;
+}
+
+.section_pied
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.section_pied h1
+{
+    font-size: 1rem;
+    padding-bottom: 0.3rem;
+}
+
+.section_pied a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+    padding-bottom: 0.3rem;
+}
