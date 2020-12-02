@@ -21,15 +21,21 @@ a
 header
 {
     display: flex;
+    justify-content: space-between;
 }
 
 .menu
 {
     display: flex;
-    justify-content: flex-end;
-    width: 100%;
+    /*justify-content: flex-end;*/
+    /*width: 100%;*/
 }
 
+.menu ul
+{
+    list-style: none;
+    display: flex;
+}
 .menu a
 {
     background-color: white;
@@ -180,6 +186,7 @@ header
 .bloc_hébergements
 {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -198,13 +205,12 @@ header
 .bloc_hébergements h2
 {
     font-size: 1rem;
-    margin-bottom: -10px;
 }
 
 .bloc_hébergements p
 {
     font-size: 0.7rem;
-
+    font-weight: normal;
 }
 
 .bloc_hébergements span
@@ -271,22 +277,14 @@ header
 {
     position: relative;
     bottom: 15px;
-    margin-bottom: -2rem;
-}
-
-.titre_hebergements_populaires i
-{
-    position: relative;
-    bottom: 50px;
-    left: 350px;
+    /*margin-bottom: -2rem;*/
 }
 
 .bloc_hebergements_populaires
 {
-    width: 400px;
     background-color: #F2F2F2;
     border-radius: 20px 20px 20px 20px;
-    flex-grow: 2;
+    flex-grow: 1;
 }
 
 .Hebergements_images_gauche
@@ -431,4 +429,120 @@ footer
     color: black;
     font-size: 0.8rem;
     padding-bottom: 0.3rem;
+}
+
+/* PETITES RÉSOLUTIONS DESKTOP */
+@media screen and (max-width: 1400px) 
+{
+    .bloc_hébergements
+    {
+        flex-direction: column;
+    }
+    .bloc_hebergements_classiques
+    {
+        margin-right: 0px;
+        margin-bottom: 2rem;
+    }
+    .groupe_images_activites
+    {
+        height: 500px;
+    }
+    .format1, .format2, .format3
+    {
+        width: 250px;
+        height: 140px;
+        border-radius: 20px 20px 0 0;
+    }
+}
+
+/* AFFICHAGE TABLETTES ET SMARTPHONES */
+@media screen and (max-width: 768px) 
+{
+    .main_container
+    {
+        width: auto;
+    }
+    .menu
+    {
+        /*display: flex;
+        flex-direction: column-reverse;*/
+    }
+
+    .accroche
+    {
+        text-align: center;
+    }
+
+    .saisie_ville
+    {
+        justify-content: center;
+    }
+
+    .groupe_filtres
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .groupe_filtres h1
+    {
+        margin-left: -10rem;
+    }
+    .groupe_filtres a
+    {
+        margin-bottom: 0.2rem;
+    }
+
+    .nb_logements
+    {
+        justify-content: center;
+    }
+
+    .groupe1, .groupe2
+    {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .Hebergements_images_dessus
+    {
+        margin-bottom: 1rem;
+    }
+
+    .Hebergements_images_gauche
+    {
+        margin: auto;
+        width: 85%;
+        height: 120px;
+        margin-bottom: 1.5rem;
+    }
+
+    .Hebergements_images_gauche h2
+    {
+        
+    }
+
+    .texte_image
+    {
+        margin-left: 120px;
+        width: 60%;
+        height: 100%;
+    }
+
+
+    .groupe_images_activites
+    {
+        height: auto;
+    }
+    .image_activite
+    {
+        margin-top: 1rem;
+    }
+
+    .bloc_pied_page
+    {
+        flex-direction: column;
+        padding: 2rem;
+    }
 }
