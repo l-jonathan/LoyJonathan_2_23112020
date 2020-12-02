@@ -117,6 +117,7 @@ header
 
 .filtre
 {
+    /*display: inline-block;*/
     height: 30px;
     width: 150px;
     margin-left: 20px;
