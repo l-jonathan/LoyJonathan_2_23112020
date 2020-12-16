@@ -29,8 +29,6 @@ header
 .menu
 {
     display: flex;
-    /*justify-content: flex-end;*/
-    /*width: 100%;*/
 }
 
 .menu ul
@@ -130,7 +128,6 @@ header
 
 .filtre
 {
-    /*display: inline-block;*/
     height: 30px;
     width: 150px;
     margin-left: 20px;
@@ -284,7 +281,6 @@ header
 {
     position: relative;
     bottom: 15px;
-    /*margin-bottom: -2rem;*/
 }
 
 .bloc_hebergements_populaires
