@@ -3,6 +3,8 @@ body
 {
     font-family: 'Raleway', sans-serif;
     overflow-wrap: break-word;
+    max-width: 1400px;
+    margin: auto;
 }
 
 .main_container
@@ -473,6 +475,12 @@ footer
         flex-direction: column;
     }
 
+    .menu_ancre
+    {
+        justify-content: center;
+        padding-left: 0;
+    }
+
     .menu_inscrire
     {
         padding: 1rem 0 1rem 0;
@@ -483,7 +491,6 @@ footer
         left: 0;
         right: 0;
         margin-top: 100px;
-        padding-left: 18%;
         position: absolute;
         text-align: center;
     }
@@ -597,5 +604,25 @@ footer
     {
         flex-direction: column;
         padding: 2rem;
+    }
+}
+
+/* AFFICHAGE TRES PETITE DEFINITION */
+@media screen and (max-width: 352px) 
+{
+    .texte_image
+    {
+        position: relative;
+        bottom: 120px;
+    }
+
+    .description
+    {
+        padding-right: 20px;
+    }
+
+    .description h2, .description p
+    {
+        font-size: 0.8rem;
     }
 }
