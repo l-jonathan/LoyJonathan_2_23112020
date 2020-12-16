@@ -594,6 +594,11 @@ footer
     .image_activite
     {
         margin-top: 1rem;
+        width: 80%;
+    }
+    .image_activite img
+    {
+        width: 100%;
     }
 
     .bloc_pied_page
