@@ -467,10 +467,27 @@ footer
     {
         width: auto;
     }
-    .menu
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu_inscrire
     {
-        /*display: flex;
-        flex-direction: column-reverse;*/
+        padding: 1rem 0 1rem 0;
+    }
+    nav ul:nth-child(1) {
+        order: 2;
+        left: 0;
+        right: 0;
+        margin-top: 100px;
+        position: absolute;
+        text-align: center;
+    }
+
+    .bloc_page
+    {
+        margin-top: 100px;
     }
 
     .accroche
